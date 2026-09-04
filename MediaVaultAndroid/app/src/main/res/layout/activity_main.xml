@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/pathText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/backButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="戻る" />
+        <Button android:id="@+id/newFolderButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="新規フォルダー" />
+        <Button android:id="@+id/downloadButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="URL保存" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+</LinearLayout>
